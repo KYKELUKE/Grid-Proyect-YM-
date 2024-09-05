@@ -1,21 +1,78 @@
-body{
+body{ margin-top: 10vh;
+   border-radius: 10px; 
+    justify-content: center;
     display: grid;
     background-color: black;
+    color: aliceblue;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+.container {
+    width: 80vw; /* Ajusta el ancho del contenedor según sea necesario */
+    height: 70vh; /* Ajusta la altura del contenedor según sea necesario */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(4, 1fr);    
+    gap: 14px; 
+    border-radius: 10px; 
+    border: 1px solid white;
+    padding: 10px; /* Espacio interior opcional */
+  }
 div{
     display: grid;
     justify-items: center; 
     align-items: center; 
     border-radius: 10px; 
-    border: 2px solid white;
+    border: 1px solid white;
     width: 38vh;
     height: 30vh;
 
    && h1{
-    margin-top: -18vh;   
-    color: aliceblue;
     font-size: 15px;
     }
+    && p{
+        font-size: 10px;
+        text-align: center;
+        margin-top: -120px;
+    }
+}
+
+.item-1 {
+   grid-column: 1 / 3; /* Ocupa dos columnas */
+    grid-row: 1 / 2;    /* Ocupa una fila */
+
+  }
+
+  .item-2 {
+    width: 70vh;
+    grid-column: 3 / 5; /* Ocupa las columnas 3 a 5 */
+    grid-row: 1 / 2;    /* Ocupa dos filas */
+    background-color: #5f4b8b;
+    img {
+        width: 45vh; 
+        height: 30vh; 
+        align-items: end;
+        margin-right: auto;
+      }
+      p{
+        width: 100px;
+        height: 20px;
+        text-align: center;
+        justify-content: end;
+        margin-top: -44vh;
+        margin-left: 45vh;
+        font-size: 15px;
+      }
+      
+  }
+  .item-3 {
+    grid-column: 1 / 3; /* Ocupa las columnas 1 a 3 */
+    grid-row: 3 / 4;    /* Ocupa una fila */
+    background-color: #5f4b8b;
+}
+
+.item-4 {
+    grid-column: 3 / 5; /* Ocupa las columnas 3 a 5 */
+    grid-row: 3 / 4;    /* Ocupa una fila */
+    background-color: #f15bb5;
 }
